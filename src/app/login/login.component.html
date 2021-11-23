@@ -1,0 +1,17 @@
+<p>{{exp}}</p>
+<div class="main">
+        
+    <h1>Bank application</h1><br><br><br>
+    <div>
+    <label for="account_no">Account Number:</label>
+    <input type="text" [value]="accno" [(ngModel)] ="accno" id="account_no"><br><br><br>
+    <label for="password">Password:</label>
+    <input type="text" [(ngModel)] ="pwd" id="password"><br><br><br>          
+    
+    <button type="button" (click)="login()">Login</button>
+    <a routerLink='register'>register</a>
+</div>
+    
+    
+
+</div>

@@ -1,0 +1,26 @@
+angular
+
+1.component-html,css,ts(type script)-root component,app component
+
+2.module-root module,app module
+
+3.data binding
+
+            3.1->one way binding-data flow in 1 direction
+                1.component to view
+                    1.string interpolation/interpolation -syntax:{{expression}}
+                    2.property binding-syntax:[binding-target]="binding source"
+                2.from view to component
+                    1.event binding-syntax:(event)="function call"
+                    2.event binding using $event-syntax:(event)="function-call($event)"
+                    3.template referring variable-syntax:#variable_name
+            3.2->two way binding-2 direction(ngModel-formsmodule)syntax:[(ngModel)]="variable_name"
+                if ngModel in form tag then set name property
+
+4.angular routing(oro web page-num path set cheyyan)
+
+5.Dependency injection-in constructor(constructor anu oru classil adyam execuite akunnath..
+                                       .athanu constructoril kodukkunnath)-
+                       syntax:object:dependent_class_name
+                    
+6.Angular Services-   syntax:ng g s service_name   [src=>app=>srvice folder create akki]
