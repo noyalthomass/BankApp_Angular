@@ -1,6 +1,6 @@
 angular
 
-1.component-html,css,ts(type script)-root component,app component
+1.component-html,css,ts(type script)-root component,app component=>Building block=>html view componentnu ullond
 
 2.module-root module,app module
 
@@ -24,3 +24,34 @@ angular
                        syntax:object:dependent_class_name
                     
 6.Angular Services-   syntax:ng g s service_name   [src=>app=>srvice folder create akki]
+
+7.ngSubmit
+
+8.Angular forms
+
+  8.1-template driven angular  forms
+
+  8.2-model Driven angular forms
+
+      8.2.1-Reactive forms-for validating a web page-ReactiveFormsModule(3rd party library import cheyyanm)-ethu pagene aano cheyyamdey aaa pagenu 3 part venm(Form group,Form arrray,FormControl name)
+
+9.Angular Directives-DOM manipulate cheyyan
+   
+     9.1-component directives-component use cheyth dom il change aakka
+     9.2-Structural directives-adding or deleting component ,syntax:*
+             
+             9.2.1-ngIf-syntax:*ngIf="condition" -ethelum condition vech change venel(add or delete)
+             9.2.2- ngFor-syntax:*ngFor=""
+
+10.Local storage
+    10.1.setItem-to store values
+    10.2.getItem-to call a value
+    10.3removeItem-to remove a item from local storage
+
+11.import HttpclientModule-front end and backend integreate cheyyan
+  11.1 inject  Httpclient in data service
+
+12.RXJS(reactive extension of js) -library-async events ayittullath eggane resolve akkunnath egganeyann angularil parayunnath
+     12.1 observable- .subscribe()
+
+13.angular pipe-(syntax:expression | pipie operator[:pipe argument])user input cheyyunna kargl transform cheyyan vendi

@@ -1,0 +1,23 @@
+<body>
+  <div class="navbar">
+    <p class="top">Help-Line-Number:18006644900</p>
+  </div>
+  <div class="tr_table">
+    <table>
+      <thead>
+        <tr><th colspan="2">Payment History</th></tr>
+          
+        <tr>
+          <th>Payment Type</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of transaction">
+          <td>{{t.type}}</td>
+          <td>{{t.amount}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>

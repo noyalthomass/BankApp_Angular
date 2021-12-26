@@ -1,17 +1,26 @@
-<p>{{exp}}</p>
-<div class="main">
-        
-    <h1>Bank application</h1><br><br><br>
-    <div>
-    <label for="account_no">Account Number:</label>
-    <input type="text" [value]="accno" [(ngModel)] ="accno" id="account_no"><br><br><br>
-    <label for="password">Password:</label>
-    <input type="text" [(ngModel)] ="pwd" id="password"><br><br><br>          
-    
-    <button type="button" (click)="login()">Login</button>
-    <a routerLink='register'>register</a>
-</div>
-    
-    
-
-</div>
+<body>
+<div class="navbar">
+    <p class=top>Help-Line-Number:18006644900</p>
+  </div>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="container">
+    <div class="header">
+      <h1>LogIn</h1>
+    </div>
+    <div class="main">
+      
+        <span>
+          <input type="text" name="accno" formControlName="accno"  placeholder="Account Number" >
+        </span><br>
+        <div *ngIf="(this.loginForm.get('accno')?.touched || this.loginForm.get('accno')?.dirty) && this.loginForm.get('accno')?.errors" id="errors">invalid account number</div>
+        <span>
+          <input type="password" name="pwd" formControlName="pwd" placeholder="Password" >
+        </span><br>
+        <div *ngIf="(this.loginForm.get('pwd')?.touched || this.loginForm.get('pwd')?.dirty) && this.loginForm.get('pwd')?.errors" id="errors">invalid password</div>
+        <button class="col" type="submit">Log in</button>
+        <div><p>Not registered yet?<a routerLink='register'>SignUp</a></p></div>
+      
+    </div>
+  </div>
+</form>
+</body>

@@ -1,19 +1,51 @@
+<body>
+    <div class="navbar">
+        <p class=top>Help-Line-Number:18006644900</p>
+      </div>
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div class="container">
+        <div class="header">
+            <h1>Register Here</h1>
+        </div>
+        <div class="main">
+            
+            <span>
+                <label for="fname"></label>
+            <input type="text" name="acno" formControlName="uname" placeholder="First Name" id="fname">
+            </span><br>
+            <div *ngIf="(this.registerForm.get('uname')?.touched || this.registerForm.get('uname')?.dirty) && this.registerForm.get('uname')?.errors" id="errors">Invalid username</div>
+            <span>
+                <label for="lname"></label>
+                <input type="text" placeholder="Last Name" id="lname" name="lname">
+            </span><br>
+            <span>
+                <label for="account_no"></label>
+            <input type="text" name="acno" formControlName ="acno" placeholder="Account Number" id="account_no">
+            </span><br>
+            <div *ngIf="(this.registerForm.get('acno')?.touched || this.registerForm.get('acno')?.dirty) && this.registerForm.get('acno')?.errors" id="errors">Invalid Account number</div>
 
-<div class="main">
+            <span>
+                <label for="balance"></label>
+            <input type="number" placeholder="Balance" id="balance">
+            </span> <br>
+            <span>
+                <label for="password"></label>
+            <input type="text" name="pswd" formControlName ="pswd" placeholder="Password" id="password1">
+            </span> <br>  
+            <div *ngIf="(this.registerForm.get('pswd')?.touched || this.registerForm.get('pswd')?.dirty) && this.registerForm.get('pswd')?.errors" id="errors">Invalid Password</div>
+  
+            <span>
+                <label for="confirm_password"></label>
+            <input type="password" placeholder="Confirm Password" id="confirm_password">
+            </span><br>
+            
+            <button type="submit">Sign Up</button>
         
-    <h1>register</h1><br><br><br>
-    <div>
-        <label for="user">username:</label>
-        <input type="text" [value]="user" [(ngModel)] ="user" id="account_no"><br><br><br> 
-    <label for="account_no">Account Number:</label>
-    <input type="text" [value]="accno" [(ngModel)] ="accno" id="account_no"><br><br><br>
-    <label for="password">Password:</label>
-    <input type="text" [(ngModel)] ="pwd" id="password"><br><br><br>          
-    
-    <button type="button" (click)="register()">Register</button>
-    
-</div>
-    
-    
+        </div>
+    </div>
+</form>
+</body>
 
-</div>
+
+
+
